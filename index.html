@@ -6,13 +6,18 @@
   <style>
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:900');
+// Define una variable para el color naranja casi transparente
+$orange-transparent: hsla(30, 100%, 56%, 0.2);
 
 h1 {
-	font-family: 'Exo 2', sans-serif;
-	font-size: 8.5vw;
-	color: white;
-	padding: 5rem 0;
-	text-shadow: 0px 4px 48px rgba(255,255,255,0.2);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 8.5vw;
+  color: transparent;
+  padding: 5rem 0;
+  text-shadow: 0px 4px 48px rgba(255,255,255,0.2);
+  background: linear-gradient(to right, $orange-transparent, transparent); /* Utiliza el color naranja casi transparente */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
