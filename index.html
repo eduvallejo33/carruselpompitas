@@ -7,12 +7,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:900');
 
+
 h1 {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 8.5vw;
 	color: white;
 	padding: 5rem 0;
 	text-shadow: 0px 4px 48px rgba(255,255,255,0.2);
+  border-radius: 10px;
 }
 
 .container {
@@ -21,7 +23,7 @@ h1 {
 	align-content: center;
 	justify-content: center;
 	background: {
-		image: linear-gradient(to bottom,  #00c9ff 0%, #92fe9d 100%), url(https://images.unsplash.com/photo-1502726299822-6f583f972e02);
+		/* image: linear-gradient(to bottom,  #00c9ff 0%, #92fe9d 100%), url(https://images.unsplash.com/photo-1502726299822-6f583f972e02); */
 		blend-mode: multiply;
 		size: cover;
 	}
@@ -321,8 +323,8 @@ html, body {
 
 }
 body {
-  /* background: black; */
-  background-image: url('pngtree-sea-__sea-bottom-light-advertising-background-picture-image_2249618.jpg');
+  /* background: black;
+  background-image: url('pngtree-sea-__sea-bottom-light-advertising-background-picture-image_2249618.jpg'); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -348,8 +350,13 @@ body {
   perspective: 700px;
   perspective-origin: center;
 }
+
+
+
 .panel {
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 165, 0, 1); /* Naranja translúcido con 70% de opacidad */
+
   width: 100px;
   height: 100px;
   position: absolute;
@@ -786,7 +793,7 @@ section {
   position: relative; /* Asegúrate de que los botones tengan un contexto de posicionamiento */
   z-index: 1000; /* Coloca los botones en la capa superior */
 }
-.pagination button {
+/* .pagination button {
   padding: 0;
   border: none;
   cursor: pointer;
@@ -799,7 +806,25 @@ section {
   font-size: 20px;
   border-radius: 100%;
   transition: all 0.2s ease-in-out;
+} */
+
+.pagination button {
+  padding: 0;
+  border: 4px solid rgba(255, 165, 0, 0.7); /* Naranja translúcido con 70% de opacidad */
+  cursor: pointer;
+  width: 44px;
+  color: black;
+  background: #fffa;
+  height: 44px;
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
 }
+
+
+
 .pagination button:hover {
   background: #fffc;
 }
